@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --bg-cream: #faf7f2;
+  --bg-card: #ffffff;
+  --border-cream: #e6dfd5;
+  --burgundy: #7a1c30;
+  --burgundy-hover: #5e1323;
+  --burgundy-light: #fbf0f2;
+  --burgundy-border: #d4a5af;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-cream);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Clean, simple card styling */
+.clean-card {
+  background-color: #ffffff;
+  border: 1px solid #e5dfd3;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.clean-card-selected {
+  background-color: #ffffff;
+  border: 2px solid #7a1c30;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(122, 28, 48, 0.1);
+}
+
+/* Subtle Burgundy Accent Elements */
+.btn-burgundy {
+  background-color: #7a1c30;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: background-color 0.15s ease;
+}
+
+.btn-burgundy:hover {
+  background-color: #5e1323;
+}
+
+.btn-outline-burgundy {
+  background-color: transparent;
+  color: #7a1c30;
+  border: 1px solid #d4a5af;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.btn-outline-burgundy:hover {
+  background-color: #fbf0f2;
+  border-color: #7a1c30;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ede6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1c8bb;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5a999;
+}
