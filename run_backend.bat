@@ -1,0 +1,7 @@
+@echo off
+title ContextOS Backend Service
+cd /d "%~dp0\..\backend"
+echo [ContextOS] Starting FastAPI Backend on http://127.0.0.1:8000 ...
+python -m uvicorn main:app --host 127.0.0.1 --port 8000
+pause
+

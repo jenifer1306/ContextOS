@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-11-05T15:35:51Z",
+  "hardware": {
+    "os": "Windows 11 (10.0.26200)",
+    "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel (16 logical cores)",
+    "ram_total_gb": 15.7,
+    "ram_usable_gb": 3.0,
+    "gpu": "Standard Display Adapter / Integrated GPU (Assumed)",
+    "hardware_detection": "Dynamic host inspection (psutil & platform)",
+    "recommended_model": "qwen2.5:1.5b",
+    "max_recommended_params": "3B"
+  },
+  "iterations": 20,
+  "metrics": {
+    "os_detection_latency_ms": {
+      "mean": 0.021,
+      "std": 0.039,
+      "min": 0.01,
+      "max": 0.184
+    },
+    "sim_detection_latency_ms": {
+      "mean": 0.001,
+      "std": 0.001,
+      "min": 0.001,
+      "max": 0.003
+    },
+    "context_processing_latency_ms": {
+      "mean": 2.56,
+      "std": 11.424
+    },
+    "sqlite_wal_write_latency_ms": {
+      "mean": 22.037,
+      "std": 3.709
+    },
+    "sqlite_memory_read_latency_ms": {
+      "mean": 2.842,
+      "std": 4.04
+    },
+    "recommendation_generation_latency_ms": {
+      "mean": 0.001,
+      "std": 0.002
+    },
+    "local_fallback_inference_latency_ms": {
+      "mean": 0.007,
+      "std": 0.007
+    },
+    "process_ram_rss_mb": 42.9,
+    "process_cpu_percent": 0.0,
+    "total_context_cycle_overhead_ms": 24.618
+  }
+}
